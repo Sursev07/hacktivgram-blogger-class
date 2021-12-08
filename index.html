@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+ 
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hacktivgram</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- card post -->
+    <div
+      class="container d-flex justify-content-center align-items-start mt-5"
+    >
+      <div class="card" style="width: 30rem">
+        <img src="./images/post-1.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body"></div>
+      </div>
+      <div style="width: 30rem">
+        <div class="card-body">
+          <h5 class="card-title fs-5">hacktiv8.id</h5>
+          <p class="card-text fs-6 fw-lighter">
+            Proses membuat mobile app dimulai dari melakukan riset dan
+            perencanaan berdasarkan objektif bisnis atau ide besar pembuatan
+            aplikasi. Kamu bisa mulai dengan menentukan bahasa pemrograman yang
+            tepat untuk development, testing, dan deploy sebelum aplikasimu siap
+            diluncurkan. Mau tahu prosesnya lebih dalam? Kamu bisa belajar
+            menjadi seorang Mobile Developer di kelas React and React Native
+            dalam Program Professional Development Hacktiv8. 
+          </p>
+          <hr>
+          <ul class="no-bullets  overflow-bar" id="comment-list">
+              <li class="d-flex align-items-center fw-lighter mt-2">
+                <img class="avatar" src="http://i.stack.imgur.com/Dj7eP.jpg" />
+                <span>Keren abiezz</span>
+              </li>
+              <li class="d-flex align-items-center fw-lighter mt-2">
+                <img class="avatar" src="http://i.stack.imgur.com/Dj7eP.jpg" />
+                <span>Mau dong min ikutan kelas nya</span>
+              </li>
+          </ul>
+          <form class="mt-5" onsubmit="postComment(event)">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="comment"
+                placeholder="add a comment ..."
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/index.js"></script>
+</html>

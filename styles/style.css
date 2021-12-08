@@ -1,0 +1,19 @@
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.overflow-bar {
+  float: left;
+  width: 1000px;
+  overflow-y: auto;
+  height: 200px;
+}
